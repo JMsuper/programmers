@@ -31,13 +31,6 @@ class Solution {
             totalTransferInfo[rxIdx][1] += 1;
         }
         
-        // for(int i = 0; i < friendsLeng; i++){
-        //     for(int j = 0; j < friendsLeng; j++){
-        //         System.out.print(giftTransferInfo[i][j]);
-        //     }
-        //     System.out.println();
-        // }
-        
         // (3) 데이터 수집 : 선물 지수 계산
         for(int i = 0; i < friendsLeng; i++){
             int txCnt = totalTransferInfo[i][0];
@@ -46,15 +39,6 @@ class Solution {
             
             totalTransferInfo[i][2] = giftScore;
         }
-        
-//         for(int i = 0; i < friendsLeng; i++){
-//             for(int j = 0; j < 3; j++){
-//                 System.out.print(totalTransferInfo[i][j]);
-//             }
-//             System.out.println();
-          
-//         }
-        
         
         // (4) 데이터 활용 : 이번달 받을 선물 개수 예측
         for(int a = 0; a < friendsLeng; a++){
@@ -81,10 +65,6 @@ class Solution {
                 }
             }
         }
-        
-//         for(int i = 0; i < friendsLeng; i++){
-//             System.out.println(expectedReceiveCountList[i]);
-//         }
         
         int result = 0;
         
